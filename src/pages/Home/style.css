@@ -1,0 +1,248 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+.btn-pagination {
+  border: none;
+  border-radius: 5px;
+  width: 85px;
+  height: 40px;
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  font-weight: 700;
+  justify-content: center;
+  text-align: center;
+  color: white;
+  gap: 3px;
+}
+.bx {
+  font-weight: bold;
+  justify-content: center;
+  text-align: center;
+}
+.btn-custom {
+  background: blue;
+  color: white;
+  padding: 5px 10px;
+  text-align: center;
+}
+
+.btn-custom:hover {
+  color: blue;
+  background: white;
+  padding: 3px 8px;
+  border: 2px solid blue;
+}
+.container-home {
+  position: absolute;
+  right: 0;
+  width: 80vw;
+  height: 100vh;
+}
+
+.container-home .header-custom {
+  position: fixed;
+  background-color: white;
+  top: 0;
+  right: 0;
+  width: 79.6vw;
+  height: 10vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.container-home .header-custom .nav-custom {
+  width: 90%;
+  display: flex;
+  align-items: center;
+}
+
+.container-home .header-custom .nav-custom .search {
+  flex: 3;
+  display: flex;
+  justify-content: center;
+}
+
+.container-home .header-custom .nav-custom .search input[type="text"] {
+  border: none;
+  background: #f1f1f1;
+  padding: 10px;
+  width: 50%;
+}
+
+.container-home .header-custom .nav-custom .search button {
+  width: 40px;
+  height: 40px;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container-home .header-custom .nav-custom .search button img {
+  width: 30px;
+  height: 30px;
+}
+
+.container-home .header-custom .nav-custom .user {
+  flex: 1;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.container-home .header-custom .nav-custom .user img {
+  width: 40px;
+  height: 40px;
+}
+
+.container-home .header-custom .nav-custom .user .img-case {
+  position: relative;
+  width: 50px;
+  height: 50px;
+}
+
+.container-home .header-custom .nav-custom .user .img-case li {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.container-home .content-custom {
+  position: relative;
+  margin-top: 50px;
+  min-height: 90vh;
+}
+.content-1 {
+  display: flex;
+  padding: 10px 10px 10px 20px;
+  gap: 50px;
+}
+.cards-custom {
+  font-weight: bold;
+  font-size: 30px;
+  color: white;
+  width: 250px;
+  height: 150px;
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.container-home .content-custom .content-2 {
+  min-height: 60vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+.container-home .content-custom .content-2 .list-users {
+  min-height: 50vh;
+  flex: 5;
+  margin: 0 25px 25px 25px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  display: flex;
+  flex-direction: column;
+}
+.container-home .content-custom .content-2 .list-users h2 {
+  font-size: 30px;
+  font-weight: bold;
+}
+.list-users .title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px; /* Add margin for spacing */
+}
+
+.list-users .pagination {
+  display: flex;
+  gap: 10px;
+}
+.container-home .content-custom .content-2 .new-users {
+  background: #ffffff; /* White background for new-users section */
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.container-home .content-custom .content-2 .new-users h2 {
+  font-size: 12px;
+}
+
+.list-users img,
+.new-users img {
+  width: 50px; /* Adjust the width to your preference */
+  height: 50px; /* Adjust the height to your preference */
+  border-radius: 50%; /* Optional: Add border-radius for rounded images */
+  object-fit: cover; /* Optional: Maintain aspect ratio and cover the container-home */
+}
+
+@media screen and (max-width: 1050px) {
+  .side-menu li {
+    font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 536px) {
+  .container-home .content-custom .cards-custom {
+    justify-content: space-around;
+  }
+  .btn-pagination {
+    font-size: 12px;
+    border: none;
+    border-radius: 5px;
+    width: 66px;
+    height: 35px;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    font-weight: 700;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    gap: 3px;
+  }
+  .btn-info {
+    justify-content: center;
+    text-align: center;
+    width: 45px;
+    height: 35px;
+  }
+  .btn-warning {
+    justify-content: center;
+    text-align: center;
+    width: 45px;
+    height: 35px;
+  }
+  .btn-danger {
+    justify-content: center;
+    text-align: center;
+    width: 45px;
+    height: 35px;
+  }
+  .container-home .content-custom .content-2 .list-users table th:nth-child(3),
+  .container-home .content-custom .content-2 .list-users table td:nth-child(3) {
+    display: none;
+  }
+  .container-home .content-custom .content-2 .list-users h2 {
+    font-size: 15px;
+    font-weight: bold;
+  }
+  .container-home .content-custom .content-2 .new-users {
+    width: 95%;
+  }
+}

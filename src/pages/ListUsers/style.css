@@ -1,0 +1,198 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+.btn-pagination {
+  border: none;
+  border-radius: 5px;
+  padding: 5px 10px 5px 10px;
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  font-weight: 700;
+  color: white;
+}
+.btn-add {
+  border: none;
+  border-radius: 5px;
+  padding: 5px 10px 5px 10px;
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  font-weight: 700;
+  color: white;
+}
+.btn-custom {
+  background: blue;
+  color: white;
+  padding: 5px 10px;
+  text-align: center;
+}
+
+.btn-custom:hover {
+  color: blue;
+  background: white;
+  padding: 3px 8px;
+  border: 2px solid blue;
+}
+.container-custom {
+  position: absolute;
+  right: 0;
+  width: 81vw;
+  height: 100vh;
+}
+
+.container-custom .header-custom {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 81vw;
+  height: 10vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.container-custom .header-custom .nav-custom {
+  width: 90%;
+  display: flex;
+  align-items: center;
+}
+
+.container-custom .header-custom .nav-custom .search {
+  flex: 3;
+  display: flex;
+  justify-content: center;
+}
+
+.container-custom .header-custom .nav-custom .search input[type="text"] {
+  border: none;
+  background: #f1f1f1;
+  padding: 10px;
+  width: 50%;
+}
+
+.container-custom .header-custom .nav-custom .search button {
+  width: 40px;
+  height: 40px;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container-custom .header-custom .nav-custom .search button img {
+  width: 30px;
+  height: 30px;
+}
+
+.container-custom .header-custom .nav-custom .user {
+  flex: 1;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.container-custom .header-custom .nav-custom .user img {
+  width: 40px;
+  height: 40px;
+}
+
+.container-custom .header-custom .nav-custom .user .img-case {
+  position: relative;
+  width: 50px;
+  height: 50px;
+}
+
+.container-custom .header-custom .nav-custom .user .img-case li {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.container-custom .content-users {
+  position: relative;
+  margin-top: 10vh;
+  min-height: 90vh;
+  width: 100%;
+}
+
+.container-custom .content-users .content-2 {
+  min-height: 60vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+.container-custom .content-users .content-2 .list-users {
+  min-height: 50vh;
+  flex: 5;
+  margin: 0 25px 25px 25px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  display: flex;
+  flex-direction: column;
+}
+
+.list-users .title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px; /* Add margin for spacing */
+}
+
+.list-users .pagination {
+  display: flex;
+  gap: 10px;
+}
+.container-custom .content-users .content-2 .new-users {
+  background: #ffffff; /* White background for new-users section */
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.container-custom .content-users .content-2 .new-users h2 {
+  font-size: 12px;
+}
+
+.list-users img,
+.new-users img {
+  width: 50px; /* Adjust the width to your preference */
+  height: 50px; /* Adjust the height to your preference */
+  border-radius: 50%; /* Optional: Add border-radius for rounded images */
+  object-fit: cover; /* Optional: Maintain aspect ratio and cover the container-custom */
+}
+
+@media screen and (max-width: 1050px) {
+  .side-menu li {
+    font-size: 18px;
+  }
+}
+
+
+@media screen and (max-width: 536px) {
+  .container-custom .content-users .cards-custom {
+    justify-content: center;
+  }
+ 
+  .container-custom .content-users .content-2 .list-users table th:nth-child(3),
+  .container-custom
+    .content-users
+    .content-2
+    .list-users
+    table
+    td:nth-child(3) {
+    display: none;
+  }
+  .content-2 .list-users .title h2 {
+    font-size: 10px;
+  }
+}

@@ -1,0 +1,114 @@
+.side-menu a {
+  text-decoration: none;
+}
+
+.side-menu li {
+  list-style: none;
+}
+.menuItem {
+  align-items: center;
+  gap: 1rem;
+  transition: all 300ms ease;
+  border-radius: 0.7rem;
+  font-size: 14px;
+}
+
+.title {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 15px 10px;
+  border-bottom: 2px solid #999;
+}
+
+table {
+  padding: 10px;
+}
+
+th,
+td {
+  text-align: left;
+  padding: 8px;
+}
+
+.side-menu {
+  font-family: "Poppins", sans-serif;
+  position: fixed;
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  width: 19vw;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.side-menu .brand-name {
+  color: white;
+  height: 10vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.side-menu .brand-name h1 {
+  font-size: 30px;
+  font-weight: 600;
+}
+.active-menu {
+  background: #f799a354;
+  margin-left: 0;
+}
+.active-menu::before {
+  content: "";
+  width: 8px;
+  height: 56px;
+  background: #ff919d;
+  position: absolute;
+  left: 0;
+}
+.side-menu li {
+  font-size: 24px;
+  padding: 10px 40px;
+  color: white;
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+ul:last-child {
+  margin-top: 20px; /* Adjust the margin to create space between the two lists */
+}
+@media screen and (max-width: 1050px) {
+  .side-menu li {
+    font-size: 18px;
+  }
+}
+@media screen and (max-width: 940px) {
+  .side-menu li span {
+    display: none;
+  }
+
+  .side-menu li {
+    padding: 8px 20px; /* Adjust padding for mobile */
+  }
+
+  .side-menu {
+    align-items: center;
+  }
+}
+@media screen and (max-width: 536px) {
+  .side-menu li .bx {
+    width: 30px;
+    height: 30px;
+  }
+  .side-menu .brand-name h1 {
+    font-size: 10px;
+    font-weight: 600;
+  }
+  .active-menu::before {
+    content: "";
+    width: 5px;
+    height: 45px;
+    background: #ff919d;
+    position: absolute;
+    left: 0;
+  }
+}
